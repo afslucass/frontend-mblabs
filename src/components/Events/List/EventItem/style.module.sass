@@ -1,0 +1,79 @@
+
+@use '../../../../styles/variables'
+
+.event_container 
+    cursor: pointer
+    z-index: 0
+    height: 360px
+    border: 6px solid variables.$red
+    border-radius: 4px
+    box-shadow: 0px 0px 16px variables.$red
+
+    background-size: cover
+    background-position: center
+
+    position: relative
+
+    margin-bottom: 25px
+
+    &:hover
+        box-shadow: 0px 0px 16px variables.$green
+        border: 6px solid variables.$green
+        transition: 0.5s
+
+    .dark_effect_container
+        z-index: -9
+
+        position: absolute
+        top: 0px
+        left: 0px
+        background-color: rgba(0, 0, 0, 0)
+
+        width: 100%
+        height: 100%
+
+        &:hover
+            transition: 0.5s
+            background-color: rgba(0, 0, 0, 0.8)
+
+    h1, h2, h3
+        z-index: 999
+        pointer-events: none
+        margin-left: 20px
+        font-family: variables.$roboto
+        color: variables.$white
+
+        text-shadow: 0px 0px 8px variables.$white
+
+    h1
+        text-align: start
+        margin-top: 20px
+        font-size: 36px
+        height: 36px
+
+    h2
+        font-size: 24px
+        height: 24px
+
+    h3 
+        font-size: 18px
+
+    a 
+        box-shadow: 0px 0px 16px variables.$red
+        border: 6px solid variables.$red
+        color: variables.$red
+        text-shadow: 0px 0px 8px variables.$red
+        font-family: variables.$roboto
+        position: absolute
+        bottom: 10px
+        right: 10px
+        font-size: 24px
+        text-decoration: none
+        padding: 2px 10px
+
+        &:hover 
+            transition: 0.5s
+            box-shadow: 0px 0px 16px variables.$green
+            border: 6px solid variables.$green
+            color: variables.$green
+            text-shadow: 0px 0px 8px variables.$green

@@ -1,0 +1,62 @@
+
+@use '../styles/variables'
+
+a
+    &:hover
+        text-decoration: underline
+
+body
+    background-color: variables.$black
+
+p
+    font-family: variables.$roboto
+    color: variables.$white
+    font-size: 18px
+    text-align: justify
+
+h1
+    font-family: variables.$roboto
+    color: variables.$white
+    font-size: 48px
+    text-align: center
+
+h2
+    font-family: variables.$roboto
+    color: variables.$white
+    font-size: 24px
+
+input
+    background-color: rgba(0, 0, 0, 0)
+    border: variables.$green 6px solid
+    box-shadow: 0px 0px 8px variables.$green
+    color: variables.$green
+    border-radius: 2px    
+    font-family: variables.$roboto
+    padding: 5px
+    width: 300px
+
+    &:focus
+        outline: none
+
+    &:hover
+        border-color: variables.$darkgreen
+        color: variables.$darkgreen
+        box-shadow: 0px 2px 8px variables.$green
+        transition: 0.2s
+
+button 
+    border: none
+
+    background-color: rgba(100, 100, 100, 0)
+    border: variables.$green 6px solid
+    box-shadow: 0px 0px 8px variables.$green
+    text-shadow: 0px 0px 8px variables.$green
+    color: variables.$green
+    border-radius: 2px
+    padding: 5px
+
+    &:hover
+        border-color: variables.$darkgreen
+        color: variables.$darkgreen
+        box-shadow: 0px 2px 8px variables.$green
+        transition: 0.2s
