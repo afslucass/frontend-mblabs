@@ -9,8 +9,8 @@ export default function Input({ onQueryChange }) {
     }
 
     return (
-        <div>
-            <input type={'text'} placeholder='O que você procura?' style={{ marginRight: 10, marginBottom: 50 }} onChange={queryHandler} />
+        <div id='searchEvent' style={{ marginRight: 10, marginBottom: 50 }}>
+            <input type={'text'} placeholder='O que você procura?' onChange={queryHandler} />
             <button>Pesquisar</button>
         </div>
     )

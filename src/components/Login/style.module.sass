@@ -1,0 +1,31 @@
+
+@use '../../styles/variables'
+
+.container
+    width: 30%
+    margin: auto
+    margin-top: 100px
+
+    @media screen and (max-width: 570px)
+        width: 80%
+
+    label
+        color: variables.$white
+        font-family: variables.$roboto
+
+    div
+        margin-top: 5px
+
+    .submitButton
+        padding: 10px
+    
+    a
+        text-decoration: none
+        color: variables.$green
+
+        &:hover
+            text-decoration: underline
+
+    .error_text
+        color: variables.$red
+        font-size: 18px

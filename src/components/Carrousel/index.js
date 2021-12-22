@@ -30,7 +30,7 @@ function ResultsQuery({ query }) {
 
             const json = await res.json()
 
-            const list = json.map((element) => <div key={element.id}><Link href={'/events-by-event-id/'+element.id}>{element.name}</Link></div>)
+            const list = json.map((element) => <div key={element.id}><Link href={'/evento/'+element.id}>{element.name}</Link></div>)
             setEventsQueried(list)
 
         }
@@ -49,9 +49,10 @@ export default function Carrousel() {
 
     const [toggleImage, setToggleImage] = useState(0)
     const [query, setQuery] = useState('')
+    const [myInterval, setMyInterval] = useState()
 
     useEffect(() => {
-        setInterval(() => {
+        const interval = setInterval(() => {
             setToggleImage((value) => {
                 if(value>1) {
                     return 0
@@ -59,7 +60,11 @@ export default function Carrousel() {
                 return value+1
             })
         }, 8000)
+        setMyInterval(interval)
     }, [])
+    useEffect(() => { // Para evitar vazamento de memoria, temos que limpar o setInterval
+        clearInterval(myInterval)
+    })
 
     function inputChangeHandler(e) {
         setQuery(e.target.value)

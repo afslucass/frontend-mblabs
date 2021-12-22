@@ -1,0 +1,89 @@
+@use '../../../styles/variables'
+
+.container
+    margin-bottom: 120px
+
+    .margin
+        margin-bottom: 120px
+
+    .background
+        height: 520px
+        width: 100%
+        position: relative
+        padding-top: 120px
+        background-position: center
+        background-size: cover
+
+    h1
+        font-size: 32px
+        text-shadow: 0px 4px 4px black
+
+    label
+        color: variables.$white
+        font-family: variables.$roboto
+        margin: 10px
+        cursor: pointer
+
+    .inputFileLabel
+        &:hover
+            text-decoration: underline
+
+    .backgroundInput
+        position: absolute
+        bottom: 20px
+        left: 20px
+        text-shadow: 0px 4px 4px black
+
+    input
+        box-shadow: none
+
+        &:hover
+            border: 2px solid variables.$green
+        &:focus
+            box-shadow: none
+            border: 2px solid variables.$green
+
+        &[type='file']
+            display: none
+
+            
+
+    select
+        font-family: variables.$roboto
+
+        &:focus
+            box-shadow: none
+            border: 2px solid variables.$green
+
+    textarea
+        &:focus
+            box-shadow: none
+            border: 2px solid variables.$green
+
+    button
+        box-shadow: none
+        text-shadow: none
+        font-size: 24px
+        padding: 5px 20px
+        border: 2px solid variables.$green
+        width: auto
+        
+
+    .reset_input
+        width: auto
+        box-shadow: none
+        text-shadow: none
+        font-size: 24px
+        padding: 5px 20px
+        
+        border: 2px solid variables.$red
+        color: variables.$red
+
+        &:hover
+            border: 2px solid variables.$darkred
+            color: variables.$darkred
+
+    .error_message 
+        margin-left: 40px
+        color: variables.$red 
+        font-family: variables.$roboto
