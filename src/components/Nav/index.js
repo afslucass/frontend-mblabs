@@ -1,6 +1,7 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react/cjs/react.development'
+import { getCookie } from '../../utils/cookie'
 import style from './style.module.sass'
 
 function NavLogged({ data }) {
@@ -14,7 +15,7 @@ function NavLogged({ data }) {
     }, [])
 
     function logout() {
-        document.cookie = 'token=0'
+        document.cookie = 'token=0; path=/'
     }
 
     return (

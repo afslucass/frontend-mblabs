@@ -28,7 +28,7 @@ export default function LoginBox() {
         if(!res.ok) {
             setErrorMessage(json.errors[0].message)
         } else {
-            document.cookie = "token="+json.token;
+            document.cookie = "token="+json.token+'; path=/';
             router.push('/adm')
         }
     }

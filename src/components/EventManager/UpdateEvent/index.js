@@ -106,7 +106,7 @@ export default function UpdateEvent({ data, token }) {
     return (
         <div className={`container ${style.container}`} >
             <div className={style.background} ref={background} style={{ backgroundImage: 'url('+process.env.NEXT_PUBLIC_API_BASE_URL+'/image/'+data.backgroundUrl+')' }}>
-                <h1>Cadastro de Evento</h1>
+                <h1>Atualização de Evento</h1>
                 <div>
                     <label className={style.inputFileLabel + ' ' + style.backgroundInput} htmlFor='background'>Carregar Imagem de Background</label>
                     <input id='background' name='background' type={'file'} onChange={setBackground} ref={imageBackground} />

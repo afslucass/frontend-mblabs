@@ -22,8 +22,8 @@ export default function EventTable({ data }) {
                         <th scope="col">Evento</th>
                         <th scope="col">Cidade</th>
                         <th scope="col">Ingressos Emitidos/Total</th>
-                        <th scope="col">Data de Início (m/d/a)</th>
-                        <th scope="col">Data de Término (m/d/a)</th>
+                        <th scope="col">Data de Início</th>
+                        <th scope="col">Data de Término</th>
                         <th scope="col"></th>
                         <th scope="col"></th>
                     </tr>
